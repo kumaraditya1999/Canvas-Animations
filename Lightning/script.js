@@ -27,16 +27,17 @@ window.onload = function(){
 	ctx.fillStyle = "hsla(0, 0%, 10%, 0.2)";
 
 
-	var Lightning = function(sx,sy,ex,ey){
+	var Lightning = function(sx,sy,ex,ey,pointsetsize){
 		this.sx = sx;
 		this.sy = sy;
 		this.ex = ex;
 		this.ey = ey;
+		this.pointsetsize = pointsetsize
 		this.pointset = []
 
 		this.initialise = function(){
 			
-			for(var j = 0; j<5 ;j++){
+			for(var j = 0; j<this.pointsetsize ;j++){
 				var points = [];
 				points.push({ x : this.sx ,y : this.sy });
 				points.push({x : this.ex + (Math.random()*2-1)*width/4 ,y : this.ey + (Math.random()*2-1)*height/8  });
@@ -113,7 +114,7 @@ window.onload = function(){
 		if(Math.random()>0.90){
 			ctx.fillRect(0,0,width,height);
 			points = generateRandomPoints();
-			var lightning = new Lightning(points[0],points[1],points[2],points[3]);
+			var lightning = new Lightning(points[0],points[1],points[2],points[3],Math.ceil(2 + Math.random()*6));
 			lightning.initialise();
 			lightning.draw();
 		}
