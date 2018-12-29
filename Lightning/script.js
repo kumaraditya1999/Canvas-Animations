@@ -76,6 +76,7 @@ window.onload = function(){
 			for(var j =0; j <this.pointset.length ;j ++){
 				ctx.beginPath();
 				ctx.strokeStyle = color;
+				ctx.lineWidth = Math.random()*j;
 				for(var i = 0 ;i < this.pointset[j].length ; i++){
 					ctx.lineTo(this.pointset[j][i].x , this.pointset[j][i]. y);
 					
