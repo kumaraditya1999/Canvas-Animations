@@ -8,7 +8,7 @@ window.onload= function(){
   canvas.width=W;
   canvas.height=H;
 
-  var mf=100;
+  var mf=200;
   var flakes=[];
 
 
