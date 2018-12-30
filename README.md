@@ -19,6 +19,8 @@
  7. [SandStorm](https://github.com/kumaraditya1999/Canvas-Animations/tree/master/Sandstorm)
  
  8. [SnowFall](https://github.com/kumaraditya1999/Canvas-Animations/tree/master/Snow)
+ 
+ 9. [Waterfall](https://github.com/kumaraditya1999/Canvas-Animations/tree/master/Waterfall)
 
 ## Ussage:
 Clone this repo a host index.html for the desired animation..
